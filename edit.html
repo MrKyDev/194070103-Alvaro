@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item</title>
+    <style>
+        /* Styles are the same */
+    </style>
+</head>
+<body>
+    <h2>Edit Item</h2>
+    <form method="post" action="edit.php">
+        <input type="hidden" name="id" value="<?php echo $id; ?>">
+        <label>Item Name:</label>
+        <input type="text" name="item_name" value="<?php echo $item_name; ?>">
+        <label>Supplier:</label>
+        <input type="text" name="supplier" value="<?php echo $supplier; ?>">
+        <label>Quantity:</label>
+        <input type="number" name="quantity" value="<?php echo $quantity; ?>" min="0">
+        <label>Price:</label>
+        <input type="text" name="price" value="<?php echo $price; ?>">
+        <input type="submit" value="Update Item">
+    </form>
+    <a href="index.php" class="back-link">Back to Inventory</a>
+</body>
+</html>

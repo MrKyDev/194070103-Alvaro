@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Item</title>
+    <style>
+        /* Styles are the same */
+    </style>
+</head>
+<body>
+    <h2>Add a New Item</h2>
+    <form method="post" action="add.php">
+        <label>Item Name:</label>
+        <input type="text" name="item_name">
+        <label>Supplier:</label>
+        <input type="text" name="supplier">
+        <label>Quantity:</label>
+        <input type="number" name="quantity" min="0">
+        <label>Price:</label>
+        <input type="text" name="price">
+        <input type="submit" value="Add Item">
+    </form>
+    <a href="index.php" class="back-link">Back to Inventory</a>
+</body>
+</html>
